@@ -262,7 +262,7 @@ input[type="search"].sb-search-input {
 	display: inline-block;
 	padding: 10px 30px;
 	text-decoration: none;
-	color: #3D3E41;
+	color: #046085;
 	cursor: pointer;
 	text-transform: capitalize;
 	text-transform: uppercase;
@@ -273,8 +273,8 @@ input[type="search"].sb-search-input {
 #filters li span.active {
 	color: #FFF;
 	text-transform: uppercase;
-	background: #3D3E41;
-	border-bottom: 4px solid #40A6CF;
+	background: #046085;
+	border-bottom: 4px solid #213e60;
 	margin-bottom: 0.2em;
 	display: block;
 }
@@ -394,6 +394,7 @@ ZOOM DEFAULT
 /*---- start-about----*/
 .about{
 	padding: 1.5em 0 6em;
+	background: #eae9d7;
 }
 .about-grid{
 	float: left;
@@ -421,7 +422,7 @@ ZOOM DEFAULT
 	float: left;
 	width: 41.7%;
 	margin-right: 5%;
-	background: #a6b7bc;
+	background: #F2F2F2;
 	padding: 2em;
 	margin-bottom: 5%;
 }
@@ -593,7 +594,7 @@ ZOOM DEFAULT
 	margin-top: 2em;
 }
 .bottom-border span{
-	background: #6DAAFF;
+	background: #426c22;
 	width: 30%;
 	height: 2px;
 	display: block;
@@ -665,7 +666,7 @@ input:-ms-placeholder { color:#3D3E41; }
 }
 .contact-left input[type="submit"]{
 	font-family: 'Open Sans', sans-serif;
-	background: #6DAAFF;
+	background: #426c22;
 	color: #fff;
 	font-weight: 100;
 	padding: 0.8em 2em;
@@ -683,7 +684,7 @@ input:-ms-placeholder { color:#3D3E41; }
 	text-transform: uppercase;
 }
 .contact-left input[type="submit"]:hover{
-	background: #5695EC;
+	background: #426c22;
 }
 .contact-left form{
 	padding:1.5em 0;
@@ -2942,6 +2943,7 @@ h2.resp-accordion:first-child {
 	}
 	.about {
 		padding: 0.5em 0 1em;
+		
 	}
 	.services-bg {
 		bottom: -10%;

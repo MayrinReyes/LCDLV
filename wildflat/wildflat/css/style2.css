@@ -19,7 +19,7 @@
 	min-height:664px;
 	position: relative;
 	overflow: hidden;
-	background:url(../images/slider-bg.jpg);
+	background:url(../images/slider-bg2.png);
 	background-size: 100% 100%;
 	-webkit-transition: background-position 1s ease-out 0.3s;
 	-moz-transition: background-position 1s ease-out 0.3s;
