@@ -474,7 +474,7 @@ ZOOM DEFAULT
 	position:relative;
 }
 .services-bg{
-	background: url(../images/services-bg.jpg) no-repeat;
+	background: url(../images/services-bg.png) no-repeat;
 	background-size: 100% 100%;
 	min-height: 340px;
 	position: absolute;
