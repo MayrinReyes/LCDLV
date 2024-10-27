@@ -522,6 +522,21 @@ nav {
 
 }
 
+.customers{
+  text-align: center;
+  background-color: #ccd1cfa2;
+  border-radius: 12px;
+  column-gap: 4;
+}
+.customers div{
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .customers h2{
     text-align: center;
     padding: 4rem;
