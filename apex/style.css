@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary-color: #dcd7f8;
-  --text-dark: #3f3b57;
-  --text-light: #908ca3;
+  --primary-color: #d6d2c3;
+  --text-title: #046085;
+  --text-dark: #213439;
+  --text-light: #6d7774;
   --white: #ffffff;
   --max-width: 1200px;
 }
@@ -14,9 +15,12 @@
   box-sizing: border-box;
 }
 /*barra de navegacion*/
+.seccion{
+    padding-top: 5rem;
+}
 .seccion-container {
   max-width: var(--max-width);
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
   margin: auto;
 }
 
@@ -56,6 +60,7 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #eae9d7;
 }
 
 nav {
@@ -155,7 +160,7 @@ header {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 4.5rem;
-  color: var(--text-dark);
+  color: var(--text-title);
   text-align: center;
 }
 
@@ -187,8 +192,8 @@ header {
   align-items: center;
   gap: 10px;
   font-size: 1rem;
-  color: var(--text-dark);
-  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--white);
+  background-color: #2b6b36;
   border-radius: 5rem;
   transition: 0.3s;
   cursor: pointer;
@@ -203,7 +208,7 @@ header {
 
 .header__btn button:hover {
   color: var(--white);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #213e60;
 }
 
 .header__btn button:hover span {
@@ -231,7 +236,12 @@ img.header__image-bg {
 /*barra de navegacion*/
 
 /*servicios*/
-
+.intro__info{
+  text-align: center;
+  justify-content: center;
+  width: 1000px;
+  margin-left: 12%;
+}
 .intro__grid {
   margin-top: 4rem;
   display: grid;
@@ -240,6 +250,9 @@ img.header__image-bg {
 
 .intro__card {
   text-align: center;
+  background-color: #a6b7bc;
+  border-radius: 12px;
+
 }
 
 .intro__card div {
@@ -253,22 +266,24 @@ img.header__image-bg {
 }
 
 .intro__card:nth-child(1) div {
-  background-image: url("assets/intro-1-bg.png");
+  background-image: url("intro-1-bg.png");
 }
 
 .intro__card:nth-child(2) div {
-  background-image: url("assets/intro-2-bg.png");
+  background-image: url("intro-2-bg.png");
 }
 
 .intro__card:nth-child(3) div {
-  background-image: url("assets/intro-3-bg.png");
+  background-image: url("intro-1-bg.png");
 }
 
 .intro__card div img {
   width: unset;
   height: 75px;
 }
-
+.intro__icon i{
+  font-size: 50px;
+}
 .intro__card h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -288,46 +303,51 @@ img.header__image-bg {
   border-radius: 5rem;
   transition: 0.3s;
 }
-
+/*color de botones*/
 .intro__card:nth-child(1) a {
-  color: #ffc737;
-  border-color: #ffc737;
+  color: #426c22;
+  border-color: #426c22;
 }
 
 .intro__card:nth-child(1) a:hover {
   color: var(--white);
-  background-color: #ffc737;
+  background-color: #296434e8;
 }
 
 .intro__card:nth-child(2) a {
-  color: #257ae7;
-  border-color: #257ae7;
+  color: #426c22;
+  border-color: #426c22;
 }
 
 .intro__card:nth-child(2) a:hover {
   color: var(--white);
-  background-color: #257ae7;
+  background-color: #296434e8;
 }
 
 .intro__card:nth-child(3) a {
-  color: #cba9b6;
-  border-color: #cba9b6;
+  color: #426c22;
+  border-color: #426c22;
 }
 
 .intro__card:nth-child(3) a:hover {
   color: var(--white);
-  background-color: #cba9b6;
+  background-color: #296434e8;
 }
+/*color de botones*/
+
 /*servicios*/
 
 /*saber mas*/
-
+.about__container{
+  background-color: #d6d2c3;
+}
 .about__row {
   margin-top: 2rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
   overflow: hidden;
+  
 }
 
 .about__row:nth-child(3) {
@@ -408,7 +428,10 @@ img.header__image-bg {
   }
 
 }
-
+nav {
+  border-bottom: 1px solid #213439;
+  
+}
 @media (width > 768px) {
   nav {
     position: static;
@@ -424,6 +447,7 @@ img.header__image-bg {
   .nav__header {
     padding: 0;
     background-color: transparent;
+    
   }
 
   .nav__logo a {
@@ -495,4 +519,39 @@ img.header__image-bg {
     text-align: left;
   }
 
+}
+
+.customers h2{
+    text-align: center;
+    padding: 4rem;
+}
+.customers-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2 rem;
+}
+.customers-container .box{
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.customers-container .box p{
+    font-size: 0.938rem;
+}
+.customers-container{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.customers-container .box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customers-container .box:hover{
+    background-color:#f0eef5 ;
+    transition: 0.2s all linear;
 }
