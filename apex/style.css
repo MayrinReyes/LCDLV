@@ -5,7 +5,7 @@
   --text-title: #046085;
   --text-dark: #213439;
   --text-light: #6d7774;
-  --white: #ffffff;
+  --white: #fffefe;
   --max-width: 1200px;
 }
 
@@ -337,10 +337,10 @@ img.header__image-bg {
 
 /*servicios*/
 
-/*saber mas*/
+/*saber mas
 .about__container{
-  background-color: #d6d2c3;
-}
+  background-color: ;
+}*/
 .about__row {
   margin-top: 2rem;
   display: flex;
@@ -409,9 +409,6 @@ img.header__image-bg {
 }
 /*saber mas*/
 
-/*info*/
-
-/*info*/
  
 @media (width > 540px) {
   .contenido h1 {
@@ -424,6 +421,9 @@ img.header__image-bg {
   }
 
   .intro__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .customers-container{
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -521,10 +521,11 @@ nav {
 
 }
 
+
 .customers{
-  text-align: center;
-  border-radius: 12px;
-  column-gap: 4;
+  padding: 4rem 1rem;
+  margin: auto;
+  max-width: var(--max-width);
 }
 .customers div{
   max-width: fit-content;
@@ -537,20 +538,23 @@ nav {
 }
 .customers h2{
     text-align: center;
-    padding: 4rem;
 }
 .customers-container{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(280px, auto));
-    gap: 1.5rem;
-    margin-top: 2 rem;
+    gap: 2rem;
 }
 .customers-container .box{
   margin: 12px;
     padding: 30px;
-    box-shadow: var(--box-shadow);
+    background-color: #202a44;
+    color: #eae9d7;
     border-radius: 0.5rem;
     text-align: center;
+}
+.customers-container h4{
+  color: #ccd1cf;
 }
 .customers-container .box p{
     font-size: 0.938rem;
@@ -567,6 +571,7 @@ nav {
     object-fit: cover;
 }
 .customers-container .box:hover{
-    background-color:#f0eef5 ;
+    color: #213439;
+    background-color:#a6b7bc ;
     transition: 0.2s all linear;
 }
