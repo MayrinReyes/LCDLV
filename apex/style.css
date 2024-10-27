@@ -216,6 +216,7 @@ header {
 }
 
 .header__image {
+  background-color: ;
   position: relative;
   isolation: isolate;
 }
@@ -250,7 +251,7 @@ img.header__image-bg {
 
 .intro__card {
   text-align: center;
-  background-color: #a6b7bc;
+  background-color: #ccd1cfa2;
   border-radius: 12px;
 
 }
